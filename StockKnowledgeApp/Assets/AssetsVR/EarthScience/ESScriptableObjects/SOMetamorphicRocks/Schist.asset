@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ab0f64f3c173a4984b5a9980d399c9, type: 3}
+  m_Name: Schist
+  m_EditorClassIdentifier: 
+  name: Schist
+  description: Is a metamorphic rock with well-developed foliation. It often contains
+    significant amounts of mica which allow the rock to split into thin pieces. It
+    is a rock of intermediate metamorphic grade between phyllite and gneiss. The
+    specimen shown above is a "chlorite schist" because it contains a significant
+    amount of chlorite.
+  readDesc: {fileID: 8300000, guid: 0957833587b67fc4c9dcdc8c75eada43, type: 3}

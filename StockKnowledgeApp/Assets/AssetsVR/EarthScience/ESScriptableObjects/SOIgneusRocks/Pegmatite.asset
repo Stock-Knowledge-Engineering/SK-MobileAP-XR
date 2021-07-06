@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed86ba9519cf424b9652a85ac421c9d, type: 3}
+  m_Name: Pegmatite
+  m_EditorClassIdentifier: 
+  name: Pegmatite
+  description: 'Is an igneous rock containing high concentrations of minerals and
+    large crystals as they are formed during the last crystallization stage '
+  readDesc: {fileID: 8300000, guid: f7d0c31010bfa4a4f8b993538ad2cd64, type: 3}

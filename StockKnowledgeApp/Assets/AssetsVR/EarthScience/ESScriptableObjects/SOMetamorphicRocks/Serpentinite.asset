@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ab0f64f3c173a4984b5a9980d399c9, type: 3}
+  m_Name: Serpentinite
+  m_EditorClassIdentifier: 
+  name: Serpentine
+  description: Often occur as fine-grained admixtures and can be difficult to distinguish
+    within a rock. Chrysotile, antigorite, and lizardite are three of the primary
+    serpentine minerals.
+  readDesc: {fileID: 8300000, guid: 1847382b20441c3418f295c7dab7b164, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908c1643599a1c346a9ab00179387c98, type: 3}
+  m_Name: Condenser
+  m_EditorClassIdentifier: 
+  name: Condenser
+  description: Is used to collect and focus the light from the illuminator on to
+    the specimen. It is located under the stage often in conjunction with an iris
+    diaphragm.
+  partImage: {fileID: 21300000, guid: a927799911b200342959940dc9524aa2, type: 3}
+  readDesc: {fileID: 8300000, guid: 1327ce9bc3cb70d43a21f0723412085a, type: 3}

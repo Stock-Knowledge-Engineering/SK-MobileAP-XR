@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2e7fe37273c524f921960c9855d985, type: 3}
+  m_Name: Conglomerate
+  m_EditorClassIdentifier: 
+  name: Conglomerate
+  description: Is a clastic sedimentary rock that contains large rounded particles.
+    The space between the pebbles is generally filled with smaller particles and/or
+    a chemical cement that binds the rock together.
+  readDesc: {fileID: 8300000, guid: c43ad252182cfc3478324dda209ccba3, type: 3}

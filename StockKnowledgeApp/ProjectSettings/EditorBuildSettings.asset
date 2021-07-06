@@ -12,18 +12,111 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu/Dashboard.unity
     guid: b2abad332f91bb2458574b11818fee40
   - enabled: 1
+    path: Assets/Scenes/Main Menu/ProfileMenu.unity
+    guid: 0ba1f7c6e24bc6244b63f402375fdd4d
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/About.unity
+    guid: 1a7c931e52dbb3749be7a8542ea08a6a
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Loading.unity
+    guid: c284dd367a752bb40a84a09628baffb2
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module1_Menu-Chemistry.unity
+    guid: 65cee2d3008b2b148b0eac2d423a9512
+  - enabled: 1
     path: Assets/Scenes/Main Menu/Module1_Menu-EarthScience.unity
     guid: c86532b7a070da94d99976d5d260c3cd
   - enabled: 1
     path: Assets/Scenes/Main Menu/Module1_Menu-Biology.unity
-    guid: 670e0ca2962990c428ef94a02d7d523b
+    guid: 3c06b1463628961438846c1162acf875
   - enabled: 1
-    path: Assets/Scenes/Module1_BiologyCell.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Main Menu/Module1_Menu-Physics.unity
+    guid: f0f6297693ea3074cb9232ae7470eb97
   - enabled: 1
-    path: Assets/Scenes/Module1_EarthScience1.unity
+    path: Assets/Scenes/Main Menu/Module2_Menu-EarthScience.unity
+    guid: a27d53d7b4648be4ba6d0a4084476d7b
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module2_Menu-Physics.unity
+    guid: c518c5948447bfd40a6e92156e247fc5
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module2_Menu-Chemistry.unity
+    guid: 05f685f395bf6e9449bf341fc263b490
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module3_Menu-Chemistry.unity
+    guid: aea827d0ab6309849a820f4b1aa8dff2
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module3_Menu-Math.unity
+    guid: fe2842936caee0f4f91ed52096962096
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_BiologyCell.unity
+    guid: 37c55ccb82824b44282402afe2163aff
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Mode1_Physics_MeasurementAndConversion.unity
+    guid: 92eb6c965dd364d49913510de41e39d8
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Mode1_Physics-FreeFall.unity
+    guid: e6b3af6efee61bd42afc82baa5b06efb
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_EarthScience-SolarSystem.unity
+    guid: 0a4ab1613b760bc47b0d27db7489d731
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Module2_MeasurementsAndVectors.unity
+    guid: 1fbc9f14f1d09d54abc44bbaae7bd6cc
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_EarthScience-IgneousRocks.unity
     guid: 1c549f7d4badc8340b389ef825b22401
-  - enabled: 0
-    path: Assets/Scenes/Chemistry/ARDart.unity
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_Chemistry-Accuracy&Precision.unity
+    guid: 80a7efa520cd84747955ab92ceed7397
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Module2_RocksandMinerals.unity
+    guid: d24d41a22f767a24aad07aacfc9fdd66
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Module2_ARDart.unity
     guid: 442a477b15cf07045b727a795a992cba
+  - enabled: 1
+    path: Assets/Scenes/Mode3/Module3_ARSoccer.unity
+    guid: aca9cb5df341879409f96ee9f7b74e53
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_TemplateContent.unity
+    guid: da513c6151eb2144d9325be7e012846e
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_EarthScience-Metamorphic.unity
+    guid: d4c00afe2a679e943ab68dca0f4c0247
+  - enabled: 1
+    path: Assets/AssetsVR/EarthScience/ESScenes/Mode1_EarthScience-SolarSystemVR.unity
+    guid: 730c3283f3aa3fb4186042ae571dc691
+  - enabled: 1
+    path: Assets/AssetsVR/EarthScience/ESScenes/Mode1_EarthScience-TypesOfIgneusRocksVR.unity
+    guid: c81b721f494f1224f8013f245069b463
+  - enabled: 1
+    path: Assets/AssetsVR/EarthScience/ESScenes/Mode1_EarthScience-TypesOfMetamorphicRocksVR.unity
+    guid: a41106eb7e9d42d47a60f146fafbeb2a
+  - enabled: 1
+    path: Assets/AssetsVR/EarthScience/ESScenes/Mode1_EarthScience-TypesOfSedimentaryRocksVR.unity
+    guid: 9d9d4e45c9386494294b0a7d5d24daeb
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module_Menu-Signup.unity
+    guid: 860f57116045fd54ea8ddda8ac9c8e2d
+  - enabled: 1
+    path: Assets/AssetsVR/Chemistry/chemScenes/Mode1_Chemistry-MillikansOilDropExperiment-VR.unity
+    guid: ccd61051d460d6b478a64247224be465
+  - enabled: 1
+    path: Assets/AssetsVR/Chemistry/chemScenes/Mode1_Chemistry-PartsOfAMicroscope-VR.unity
+    guid: 2a0af06520e22524e9f16f3309a1ed6c
+  - enabled: 1
+    path: Assets/AssetsVR/Math/MathScenes/Mode3_Math-Probability-VR.unity
+    guid: 27bfdadc67c092048a179e3190c0d08f
+  - enabled: 1
+    path: Assets/AssetsVR/Math/MathScenes/Mode3_Math-Probability2-VR.unity
+    guid: 6e0107dd93d1f0345930dad74924cc52
+  - enabled: 1
+    path: Assets/AssetsVR/Chemistry/chemScenes/Mode2_Chemistry-CathodeRayTube-VR.unity
+    guid: 3be9f496dfecea24ca166769c1b0f9dc
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Mode2_Physics-FreeFall-AR.unity
+    guid: ea5de0cb6d0f98b48baae2222187166b
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Module2_BoylesLaw.unity
+    guid: dcf37c0726a400041a38f465e736a9ce
   m_configObjects: {}

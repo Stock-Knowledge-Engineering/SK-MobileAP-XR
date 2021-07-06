@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Siltstone" size="1.000000 0.920755" />
+    <ImageTarget name="Shale" size="1.000000 0.713542" />
+    <ImageTarget name="sandstone" size="1.000000 0.662971" />
+    <ImageTarget name="Rock-salt" size="1.000000 0.652344" />
+    <ImageTarget name="Limestone" size="1.000000 0.675000" />
+    <ImageTarget name="gypsum" size="1.000000 0.810720" />
+    <ImageTarget name="dolomite" size="1.000000 0.959722" />
+    <ImageTarget name="conglomerate" size="1.000000 0.718404" />
+    <ImageTarget name="coal" size="1.000000 0.748945" />
+    <ImageTarget name="Slate" size="1.000000 0.729333" />
+    <ImageTarget name="Serpentinite" size="1.000000 0.654167" />
+    <ImageTarget name="Schist" size="1.000000 0.801333" />
+    <ImageTarget name="Quartzite" size="1.000000 0.942000" />
+    <ImageTarget name="Phyllite" size="1.000000 0.771772" />
+    <ImageTarget name="Metaconglomerate" size="1.000000 0.651563" />
+    <ImageTarget name="Marble" size="1.000000 0.962000" />
+    <ImageTarget name="Hornfels" size="1.000000 0.983108" />
+    <ImageTarget name="Gneiss" size="1.000000 0.764444" />
+    <ImageTarget name="Anthracite" size="1.000000 0.979167" />
+    <ImageTarget name="tuff" size="1.000000 0.822266" />
+    <ImageTarget name="Scoria" size="1.000000 0.714063" />
+    <ImageTarget name="Rhyolite" size="1.000000 0.829375" />
+    <ImageTarget name="Pumice" size="1.000000 0.901806" />
+    <ImageTarget name="peridotite" size="1.000000 1.000000" />
+    <ImageTarget name="pegmatite" size="1.000000 0.615556" />
+    <ImageTarget name="Obsidian" size="1.000000 1.000000" />
+    <ImageTarget name="Granite" size="1.000000 0.710667" />
+    <ImageTarget name="Gabbro" size="1.000000 1.015015" />
+    <ImageTarget name="Diorite" size="1.000000 0.866667" />
+    <ImageTarget name="Basalt" size="1.000000 0.984722" />
+    <ImageTarget name="Andesite" size="1.000000 0.575385" />
+    <ImageTarget name="NEPTUNE" size="1.000000 0.915832" />
+    <ImageTarget name="URANUS" size="1.000000 0.877034" />
+    <ImageTarget name="SATURN" size="1.000000 0.856580" />
+    <ImageTarget name="JUPITER" size="1.000000 1.046512" />
+    <ImageTarget name="MARS" size="1.000000 1.047120" />
+    <ImageTarget name="EARTH" size="1.000000 1.013483" />
+    <ImageTarget name="VENUS" size="1.000000 0.849359" />
+    <ImageTarget name="MERCURY" size="1.000000 1.005515" />
+  </Tracking>
+</QCARConfig>
