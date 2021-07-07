@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mode2_SeriesGaze : GazeObject
+public class Mode2_SeriesGaze : GazeObjectV2
 {
     private Mode2_SeriesPlayer player;
     private bool hasGazedAlready;

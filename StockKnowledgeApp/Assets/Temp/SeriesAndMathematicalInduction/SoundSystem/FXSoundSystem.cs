@@ -16,10 +16,9 @@ public class FXSoundSystem : SoundSystem
         if (_instance == null) {
             _instance = this;
             audioSource = GetComponent<AudioSource>();
-            DontDestroyOnLoad(this.gameObject);
             OnStart();
         } else {
-            audioSource = _instance.gameObject.GetComponent<AudioSource>();
+            Destroy(this.gameObject);
         }
 
     }

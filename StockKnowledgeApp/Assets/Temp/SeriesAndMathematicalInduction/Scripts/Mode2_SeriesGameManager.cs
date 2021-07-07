@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Mode2_SeriesGameManager : MonoBehaviour
 {
+    private static Mode2_SeriesGameManager _instance;
+    public static Mode2_SeriesGameManager Instance { get { return _instance; } }
+    
     public GameObject[] enableOnStackChallengeComplete;
     public GameObject[] disableOnStackChallengeComplete;
     public GameObject prismsParent;
-    private static Mode2_SeriesGameManager _instance;
-    public static Mode2_SeriesGameManager Instance { get { return _instance; } }
 
 
     public Mode2_SeriesPlayer player;

@@ -21,7 +21,7 @@ public abstract class SoundSystem : MonoBehaviour
             OnStart();
         }
         else {
-            audioSource = _instance.gameObject.GetComponent<AudioSource>();
+            Destroy(this.gameObject);
         }        
     }
 

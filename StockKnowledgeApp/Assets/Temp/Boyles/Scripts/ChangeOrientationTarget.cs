@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Vuforia;
 
@@ -11,8 +13,9 @@ public class ChangeOrientationTarget : MonoBehaviour
 
     private DefaultTrackableEventHandler target;
     public enum OrientationState {Flat, Standing, Hidden};
-    public OrientationState orientationState = OrientationState.Flat;
+    public OrientationState orientationState = OrientationState.Standing;
     private OrientationState lastOrientationState;
+    public int boylesOrientation;
     
     Quaternion initialObjectRotation;
 
@@ -20,27 +23,48 @@ public class ChangeOrientationTarget : MonoBehaviour
         target = GetComponent<DefaultTrackableEventHandler>();
         lastOrientationState = orientationState;
         initialObjectRotation = gameobjectToRotate.transform.rotation;
+        boylesOrientation = PlayerPrefs.GetInt("boylesOrientation", 0);
+        Debug.Log("Orientation:" + boylesOrientation);
     }
 
-    public void ChangeOrientation(){
-        if (orientationState == OrientationState.Standing) {
-            orientationState = OrientationState.Flat;
-            // Physics.gravity = new Vector3(0, -9.81f, 0);
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-            gameobjectToRotate.transform.localRotation = initialObjectRotation;
-        } else if (orientationState == OrientationState.Flat) {
+    public void InitializeOrientation()
+    {
+
+        // if standing
+        if (boylesOrientation == 0) {
             orientationState = OrientationState.Standing;
             transform.rotation = Quaternion.Euler(-90, 0, 0);
-            // Physics.gravity = new Vector3(0, 0, -9.81f);
             Vector3 objectRotation = initialObjectRotation.eulerAngles;
             objectRotation.x -= 90;
             gameobjectToRotate.transform.localRotation = Quaternion.Euler(objectRotation);
+        } else //if flat
+        {
+            orientationState = OrientationState.Flat;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            gameobjectToRotate.transform.localRotation = initialObjectRotation;
         }
-
-        lastOrientationState = orientationState;
     }
 
-    
+    public void ChangeOrientation(){
+        if (boylesOrientation == 0) {
+            // orientationState = OrientationState.Flat;
+            // // Physics.gravity = new Vector3(0, -9.81f, 0);
+            // transform.rotation = Quaternion.Euler(0, 0, 0);
+            // gameobjectToRotate.transform.localRotation = initialObjectRotation;
+            PlayerPrefs.SetInt("boylesOrientation", 1);
+        } else {
+            // orientationState = OrientationState.Standing;
+            // transform.rotation = Quaternion.Euler(-90, 0, 0);
+            // // Physics.gravity = new Vector3(0, 0, -9.81f);
+            // Vector3 objectRotation = initialObjectRotation.eulerAngles;
+            // objectRotation.x -= 90;
+            // gameobjectToRotate.transform.localRotation = Quaternion.Euler(objectRotation);
+            PlayerPrefs.SetInt("boylesOrientation", 0);
+        }
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
 
     private void TargetFound()
     {

@@ -34,6 +34,7 @@ public class Mode2_SeriesStackTarget : MonoBehaviour
     {
         stackSuccessCount++;
         if (stackSuccessCount == 3) {
+            PointsManager.Instance.AddPoints();
             GetComponentInParent<Mode2_StackTargetManager>().UpdateActiveStack(1);
         }
     }

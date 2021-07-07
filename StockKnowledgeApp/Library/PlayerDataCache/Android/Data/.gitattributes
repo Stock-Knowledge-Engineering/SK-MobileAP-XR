@@ -1,0 +1,2 @@
+data.unity3d filter=lfs diff=lfs merge=lfs -text
+sharedassets1.resource filter=lfs diff=lfs merge=lfs -text
