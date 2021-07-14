@@ -63,4 +63,4 @@ Select the Image Target GameObject from the Hierarchy and choose from the Type d
 Press Import. Note: Maintain an accurate scale between the Vuforia targets and physical prints or objects. Using targets that deviate in size from the real-life object you wish to track might impact the quality.
 
 # COPYRIGHTED CONTENTS
-Images, videos, and text contents that are unique to Stock Knowledge are copyrighted. Please ask permission if you wish to use them.
+Images(2D and 3D assets), videos, and text contents that are unique to Stock Knowledge are copyrighted. Please ask permission if you wish to use them.
