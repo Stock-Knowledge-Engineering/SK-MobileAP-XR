@@ -1,0 +1,639 @@
+/target:library
+/nowarn:0169
+/nowarn:0649
+/out:Temp/Assembly-CSharp.dll
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/Managed/UnityEditor.dll"
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+/reference:Library/ScriptAssemblies/VuforiaScripts.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/VuforiaEditorScripts.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+/reference:Library/ScriptAssemblies/EditorMigrationScripts.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Assets/AssetsVR/GoogleVR/Plugins/Google.ProtocolBuffers.dll
+/reference:Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll
+/reference:G:/SK-MobileAPP-XR/StockKnowledgeApp/Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"C:/Program Files/Unity19_SK/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/define:UNITY_2019_4_20
+/define:UNITY_2019_4
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_INCLUDE_TESTS
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_RUNTIME_PERMISSIONS
+/define:ENABLE_ENGINE_CODE_STRIPPING
+/define:ENABLE_ONSCREEN_KEYBOARD
+/define:INCLUDE_DYNAMIC_GI
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_MONO
+/define:ENABLE_VIDEO
+/define:PLATFORM_ANDROID
+/define:UNITY_ANDROID
+/define:UNITY_ANDROID_API
+/define:ENABLE_EGL
+/define:ENABLE_NETWORK
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:PLATFORM_SUPPORTS_ADS_ID
+/define:UNITY_CAN_SHOW_SPLASH_SCREEN
+/define:UNITY_HAS_GOOGLEVR
+/define:UNITY_HAS_TANGO
+/define:ENABLE_SPATIALTRACKING
+/define:UNITY_ASTC_ONLY_DECOMPRESS
+/define:ENABLE_UNITYADS_RUNTIME
+/define:UNITY_UNITYADS_API
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+Assets\AssetsAR_\Script\Chemistry\Module2_AccuracyPrecision\ARDart.cs
+Assets\AssetsAR_\Script\Chemistry\Module2_AccuracyPrecision\DartBoard_GameManager.cs
+Assets\AssetsAR_\Script\Chemistry\Module2_AccuracyPrecision\DartShoot.cs
+Assets\AssetsAR_\Script\Chemistry\Module3_AccuracyPrecision\ARSoccer.cs
+Assets\AssetsAR_\Script\Chemistry\Module3_AccuracyPrecision\ARSoccer_GameManager.cs
+Assets\AssetsAR_\Script\Chemistry\Module3_AccuracyPrecision\SoccerShoot.cs
+Assets\AssetsAR_\Script\Etc\LeanFinger.cs
+Assets\AssetsAR_\Script\Etc\LeanGesture.cs
+Assets\AssetsAR_\Script\Etc\LeanRotate.cs
+Assets\AssetsAR_\Script\Etc\LeanScale.cs
+Assets\AssetsAR_\Script\Etc\LeanSelectable.cs
+Assets\AssetsAR_\Script\Etc\LeanSnapshot.cs
+Assets\AssetsAR_\Script\Etc\LeanTouch.cs
+Assets\AssetsAR_\Script\Etc\RotateObjectOvertime.cs
+Assets\AssetsAR_\Script\Etc\VideoPlaneController.cs
+"Assets\AssetsAR_\Script\JSON Model\CountData.cs"
+"Assets\AssetsAR_\Script\JSON Model\CountInteractableResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\Days.cs"
+"Assets\AssetsAR_\Script\JSON Model\DaysResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\Experience.cs"
+"Assets\AssetsAR_\Script\JSON Model\ExperienceResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\FavoriteSubjectCountResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\Gender.cs"
+"Assets\AssetsAR_\Script\JSON Model\GendersResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\GradeLevel.cs"
+"Assets\AssetsAR_\Script\JSON Model\GradeLevelsResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\Level.cs"
+"Assets\AssetsAR_\Script\JSON Model\LevelResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\LevelUpResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\Login.cs"
+"Assets\AssetsAR_\Script\JSON Model\LoginResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\PlayerFavoriteSubjectResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\School.cs"
+"Assets\AssetsAR_\Script\JSON Model\SchoolsResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\Score.cs"
+"Assets\AssetsAR_\Script\JSON Model\ScoresResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\TotalAccumulatedExperienceResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\UpdateNameResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\UserData.cs"
+"Assets\AssetsAR_\Script\JSON Model\UsernameResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\ValidateAccountResponse.cs"
+"Assets\AssetsAR_\Script\JSON Model\VerifyCodeResponse.cs"
+Assets\AssetsAR_\Script\Math.cs
+Assets\AssetsAR_\Script\Menu\ChangeScene.cs
+Assets\AssetsAR_\Script\Menu\CurrentUser.cs
+Assets\AssetsAR_\Script\Menu\Dashboard.cs
+Assets\AssetsAR_\Script\Menu\EditProfile.cs
+Assets\AssetsAR_\Script\Menu\GainLevelTemp.cs
+Assets\AssetsAR_\Script\Menu\LeaderboardManager.cs
+Assets\AssetsAR_\Script\Menu\Profile.cs
+Assets\AssetsAR_\Script\Menu\RecommendationManager.cs
+Assets\AssetsAR_\Script\Menu\Signup.cs
+Assets\AssetsAR_\Script\Menu\TopicSearch.cs
+Assets\AssetsAR_\Script\Mode1\ARModule1_GameManager.cs
+Assets\AssetsAR_\Script\Mode1\ARModule1_Tuitorial.cs
+Assets\AssetsAR_\Script\Mode1\DescriptionScanner.cs
+Assets\AssetsAR_\Script\Mode1\ModelDescriptionManager.cs
+Assets\AssetsAR_\Script\Mode1\UIDescriptionboxscript.cs
+Assets\AssetsAR_\Script\Mode2\Balloon\Mode2_BalloonGameManager.cs
+Assets\AssetsAR_\Script\Mode2\Balloon\Mode2_BalloonPump.cs
+Assets\AssetsAR_\Script\Mode2\Conversion\Mode2_ConversionGameManager.cs
+Assets\AssetsAR_\Script\Mode2\Conversion\Mode2_ConversionModel.cs
+Assets\AssetsAR_\Script\Mode2\Conversion\StopTrack.cs
+Assets\AssetsAR_\Script\Mode2\RocksandMinerals\Mode2_RocksandMineralsGameManager.cs
+Assets\AssetsAR_\Script\Mode2\RocksandMinerals\Mode2_RocksandMineralsModel.cs
+Assets\AssetsAR_\Script\Physics\Mode1\AddWeight.cs
+Assets\AssetsAR_\Script\Physics\Mode1\Mode1_FreeFallAudioManager.cs
+Assets\AssetsAR_\Script\Physics\Mode1\Mode1_FreeFallButtonManager.cs
+Assets\AssetsAR_\Script\Physics\Mode1\Mode1_FreeFallGameManager.cs
+Assets\AssetsAR_\Script\Physics\Mode2\MomentumImpulse\Mode2_ImpulseMomentumGameManager.cs
+Assets\AssetsAR_\Script\Physics\Mode2\MomentumImpulse\Mode2_ImpulseMomentumQuestionManager.cs
+Assets\AssetsAR_\Script\Physics\Mode2\MomentumImpulse\Mode2_ImpulseMomentumSceneManager.cs
+Assets\AssetsVR\AnalyticsScripts\DataManager.cs
+Assets\AssetsVR\AnalyticsScripts\PlayerData.cs
+Assets\AssetsVR\AnalyticsScripts\SaveData.cs
+Assets\AssetsVR\Chemistry\chemScriptableObjects\Microscope\MicroscopeComponents.cs
+Assets\AssetsVR\Chemistry\chemScripts\CRTScripts\BegginCTRMagnetExperiment.cs
+Assets\AssetsVR\Chemistry\chemScripts\CRTScripts\BegginElectricFieldExp.cs
+Assets\AssetsVR\Chemistry\chemScripts\CRTScripts\CRTMagnet.cs
+Assets\AssetsVR\Chemistry\chemScripts\CRTScripts\CloseCRTMagnetActivity.cs
+Assets\AssetsVR\Chemistry\chemScripts\CRTScripts\EndCRTIntro.cs
+Assets\AssetsVR\Chemistry\chemScripts\CRTScripts\ShowCRTIntro.cs
+Assets\AssetsVR\Chemistry\chemScripts\MicroscopeScripts\CloseMicroscopeInfoUI.cs
+Assets\AssetsVR\Chemistry\chemScripts\MicroscopeScripts\ExplodeMicroscope.cs
+Assets\AssetsVR\Chemistry\chemScripts\MicroscopeScripts\InfoCanvas.cs
+Assets\AssetsVR\Chemistry\chemScripts\MicroscopeScripts\MicroscopeGameManager.cs
+Assets\AssetsVR\Chemistry\chemScripts\MicroscopeScripts\ShowInfo.cs
+Assets\AssetsVR\Chemistry\chemScripts\MicroscopeScripts\StartMicroscope.cs
+Assets\AssetsVR\Chemistry\chemScripts\MillikansScripts\MillikansComplete.cs
+Assets\AssetsVR\Chemistry\chemScripts\MillikansScripts\MillikansPlayAudioInfo.cs
+Assets\AssetsVR\Chemistry\chemScripts\MillikansScripts\ShowMillikansInfoUI.cs
+Assets\AssetsVR\Chemistry\chemScripts\MillikansScripts\StartMillikans.cs
+Assets\AssetsVR\EarthScience\ESScriptableObjects\SOIgneusRocks\SOIgneusRocks.cs
+Assets\AssetsVR\EarthScience\ESScriptableObjects\SOMetamorphicRocks\SOMetamorphicRocks.cs
+Assets\AssetsVR\EarthScience\ESScriptableObjects\SOSedimentaryRocks\SOSedimentaryRocks.cs
+Assets\AssetsVR\EarthScience\ESScriptableObjects\SOSolarSystem\SOSolarSystem.cs
+Assets\AssetsVR\EarthScience\ESScripts\IgneusRocksScripts\IRGameManager.cs
+Assets\AssetsVR\EarthScience\ESScripts\IgneusRocksScripts\ShowIgneusInfo.cs
+Assets\AssetsVR\EarthScience\ESScripts\IgneusRocksScripts\StartIgneusRocks.cs
+Assets\AssetsVR\EarthScience\ESScripts\MetamorphicRocksScripts\MRGameManager.cs
+Assets\AssetsVR\EarthScience\ESScripts\MetamorphicRocksScripts\ShowMetamorphicInfo.cs
+Assets\AssetsVR\EarthScience\ESScripts\MetamorphicRocksScripts\StartMetamorphicRocks.cs
+Assets\AssetsVR\EarthScience\ESScripts\SedimentaryRocksScripts\SRGameManager.cs
+Assets\AssetsVR\EarthScience\ESScripts\SedimentaryRocksScripts\ShowSedimentaryInfo.cs
+Assets\AssetsVR\EarthScience\ESScripts\SedimentaryRocksScripts\StartSedimentaryRocks.cs
+Assets\AssetsVR\EarthScience\ESScripts\SolarSystemScripts\DestroyAsteroid.cs
+Assets\AssetsVR\EarthScience\ESScripts\SolarSystemScripts\ShowPlanet.cs
+Assets\AssetsVR\EarthScience\ESScripts\SolarSystemScripts\SolarSystemGameManager.cs
+Assets\AssetsVR\EarthScience\ESScripts\SolarSystemScripts\StartSolarSystem.cs
+Assets\AssetsVR\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs
+Assets\AssetsVR\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\GvrBetaControllerInput.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\GvrBetaControllerState.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\GvrBetaControllerVisualMulti.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\GvrBetaHeadset.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\GvrBetaSettings.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\GvrControllerInputDeviceExtension.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\Internal\GvrBetaAndroidNativeControllerInputProvider.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\Internal\GvrBetaEditorControllerInputProvider.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\Internal\GvrBetaHeadsetProvider.cs
+Assets\AssetsVR\GoogleVR\Beta\Scripts\Internal\GvrBetaSettingsProvider.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\DemoInfoPanel.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\DemoInputManager.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\DemoSceneManager.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\HelloVR\HeadsetDemoManager.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\HelloVR\HelloVRManager.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\HelloVR\ObjectController.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\KeyboardDemo\KeyboardDelegateExample.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\AutoPlayVideo.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\BoolEvent.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\ButtonEvent.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\FloatEvent.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\GameObjectEvent.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\TouchPadEvent.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\TransformEvent.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\Vector2Event.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\InputEvents\Vector3Event.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\ScrubberEvents.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\SwitchVideos.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\VideoControlsManager.cs
+Assets\AssetsVR\GoogleVR\Demos\Scripts\VideoDemo\VideoPlayerReference.cs
+Assets\AssetsVR\GoogleVR\Scripts\Cardboard\GvrReticlePointer.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\ArmModel\GvrArmModel.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\ArmModel\GvrBaseArmModel.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\ArmModel\IGvrArmModelReceiver.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrControllerInput.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrControllerInputDevice.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrControllerReticleVisual.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrControllerVisual.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrLaserPointer.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrLaserVisual.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrRecenterOnlyController.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\GvrTrackedController.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\IGvrControllerInputDeviceReceiver.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerProviderFactory.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeShimControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EditorControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerProviders\MouseControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerState.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\ControllerUtils.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Tooltips\GvrControllerTooltipsSimple.cs
+Assets\AssetsVR\GoogleVR\Scripts\Controller\Tooltips\GvrTooltip.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrBasePointer.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrBasePointerRaycaster.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrExecuteEventsExtension.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrPointerEventData.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrPointerEventDataExtension.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrPointerGraphicRaycaster.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrPointerPhysicsRaycaster.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrPointerScrollInput.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrScrollSettings.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\GvrXREventsSubscriber.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\IGvrPointerHoverHandler.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\IGvrScrollSettings.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\InputModule\GvrAllEventsTrigger.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\InputModule\GvrEventExecutor.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\InputModule\GvrPointerInputModule.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\InputModule\GvrPointerInputModuleImpl.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\InputModule\IGvrEventExecutor.cs
+Assets\AssetsVR\GoogleVR\Scripts\EventSystem\InputModule\IGvrInputModuleController.cs
+Assets\AssetsVR\GoogleVR\Scripts\GvrCardboardHelpers.cs
+Assets\AssetsVR\GoogleVR\Scripts\GvrEditorEmulator.cs
+Assets\AssetsVR\GoogleVR\Scripts\GvrSettings.cs
+Assets\AssetsVR\GoogleVR\Scripts\GvrUnitySdkVersion.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Enums\GvrErrorType.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Enums\GvrEventType.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Enums\GvrRecenterEventType.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Enums\GvrRecenterFlags.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Enums\GvrSafetyRegionType.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\GvrHeadset.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\HeadsetProviderFactory.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\AndroidNativeHeadsetEnums.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\AndroidNativeHeadsetProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\DummyHeadsetProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\HeadsetProviders\EditorHeadsetProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\HeadsetState.cs
+Assets\AssetsVR\GoogleVR\Scripts\Headset\Internal\IHeadsetProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\InstantPreview\InstantPreviewHelper.cs
+Assets\AssetsVR\GoogleVR\Scripts\InstantPreview\Internal\InstantPreview.cs
+Assets\AssetsVR\GoogleVR\Scripts\InstantPreview\Internal\InstantPreviewControllerProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Internal\EditorCameraOriginDict.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\GvrKeyboard.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\GvrKeyboardDelegateBase.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\GvrKeyboardIntent.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\Internal\IKeyboardProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviderFactory.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\AndroidNativeKeyboardProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\DummyKeyboardProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\Internal\KeyboardProviders\EmulatorKeyboardProvider.cs
+Assets\AssetsVR\GoogleVR\Scripts\Keyboard\Internal\KeyboardState.cs
+Assets\AssetsVR\GoogleVR\Scripts\Permissions\GvrPermissionsRequester.cs
+Assets\AssetsVR\GoogleVR\Scripts\Pose3D.cs
+Assets\AssetsVR\GoogleVR\Scripts\PropertyDrawers\GvrInfo.cs
+Assets\AssetsVR\GoogleVR\Scripts\PropertyDrawers\GvrInfoDrawer.cs
+Assets\AssetsVR\GoogleVR\Scripts\UI\GvrDropdown.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\GvrActivityHelper.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\GvrDaydreamApi.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\GvrIntent.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs
+Assets\AssetsVR\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs
+Assets\AssetsVR\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\ActivateCRDoor.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\ActivateExitDoor.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\ActivateRoomDoor.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\ActivateStorageDoor.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\CollectClue.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\OpenRoomDoors.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\Probability2GameManager.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\RoomDoorButtons.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\TeleportProbability2.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\TriggerDice.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\TriggerPaperBox.cs
+Assets\AssetsVR\Math\MathScripts\Probability2Scripts\TriggerPurse.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\EnableTrunk.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\FlipCard.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\OpenTrunk.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\ParkingManager.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\PlaceBag.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\ProbabilityIntro.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\ButtonValue.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\DoorButtons.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\EnableImageClue.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\InteractWithDoor.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\InteractWithLaptop.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\InteractWithVault.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\LaptopButtons.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\LaptopManager.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\OpenDoor.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\OpenSideTable.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\PickUpKey.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\RoomIntro.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\Teleport.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\Room\VaultButtons.cs
+Assets\AssetsVR\Math\MathScripts\ProbabilityScripts\ShowRoomAbduction.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode1\EnergyMode1Intro.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode1\RideCart.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode1\StartRide.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode3\EnergyM3_PickUpMass.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode3\EnergyM3_Retry.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode3\EnergyM3_RideManager.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode3\EnergyM3_SelectSpeed.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode3\EnergyM3_SpeedometerInput.cs
+Assets\AssetsVR\Physics\PhysicsScripts\EnergyMode3\EnergyM3_SpeedometerValue.cs
+Assets\AssetsVR\VRScripts\CloseAPanel.cs
+Assets\AssetsVR\VRScripts\GazeController.cs
+Assets\AssetsVR\VRScripts\GyroCamera.cs
+Assets\AssetsVR\VRScripts\HomeBtn.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\AudioManager.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\LookAtObject.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\Mode1_FreeBodyDiagram.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\Mode1_FreeBodyDiagramGameManager.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\Mode1_FreeBodyDiagramGaze.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\Mode1_FreeBodyDiagramModeManager.cs
+Assets\AssetsVR\VRScripts\Mode1_FreebodyDiagram\Movement.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\GazeObjects.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\LookAtCamera.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\Mode1_ConversionGameManager.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\Mode1_ConversionSoundManager.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\Mode1_ForceAndInteractionGameManager.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\PanelFade.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics\SimpleTeleport.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics_ForcesAndInteraction\LerpItem.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics_ForcesAndInteraction\Mode1_Physics_ForceAndInteractionGameManager.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics_ForcesAndInteraction\Tire.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics_ForcesAndInteraction\TopicManager.cs
+Assets\AssetsVR\VRScripts\Mode1_Physics_ForcesAndInteraction\UI_Scale.cs
+Assets\AssetsVR\VRScripts\ToggleTouchGaze.cs
+Assets\AssetsVR\VRScripts\ToggleVR2D.cs
+Assets\AssetsVR\VRScripts\TouchCamera.cs
+Assets\AssetsVR\VRScripts\UIPoints.cs
+Assets\GlobalScripts\NativeShareScript.cs
+Assets\Scenes\Onmouse.cs
+Assets\Scripts\LevelUpScripts\PlayerLevel.cs
+Assets\Scripts\LevelUpScripts\UnlockCondition.cs
+Assets\Scripts\RecomendationScripts\RecomendedTopicBasedOnFavoriteSubject.cs
+Assets\Temp\AnalyticGeometry\Models\Materials\RenderDepth.cs
+Assets\Temp\AnalyticGeometry\Scripts\Mode1_AnalyticGeometryConicSection.cs
+Assets\Temp\AnalyticGeometry\Scripts\Mode1_AnalyticGeometrySlider.cs
+Assets\Temp\AnalyticGeometry\Scripts\Mode1_AnalyticGeometrySnapArea.cs
+Assets\Temp\AnalyticGeometry\Scripts\Mode1_AnalyticGeometrySwipeController.cs
+Assets\Temp\AnalyticGeometry\Scripts\Mode1_AnalyticMovablePlane.cs
+Assets\Temp\AnalyticGeometry\Scripts\RotateOrScale.cs
+Assets\Temp\Boyles\Scripts\ChangeOrientationTarget.cs
+Assets\Temp\Boyles\Scripts\LeanTarget.cs
+Assets\Temp\Boyles\Scripts\Mode2_BoyleSwipeController.cs
+Assets\Temp\Boyles\Scripts\Mode2_BoylesManager.cs
+Assets\Temp\Boyles\Scripts\Mode2_BoylesPressure.cs
+Assets\Temp\Boyles\Scripts\Mode2_BoylesWeight.cs
+Assets\Temp\RelationAndFunction\Scripts\Mode3MathRelationGameManager.cs
+Assets\Temp\RelationAndFunction\Scripts\Mode3MathRelationSetController.cs
+Assets\Temp\RelationAndFunction\Scripts\Mode3RelationObjectSelector.cs
+Assets\Temp\RelationAndFunction\Scripts\Module3RelationCarScene.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\AudioEvent.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\GazeObjectV2.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesGameManager.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesGaze.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesKeypad.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesPlayer.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesPrism.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesPrismTarget.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_SeriesStackTarget.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\Mode2_StackTargetManager.cs
+Assets\Temp\SeriesAndMathematicalInduction\Scripts\PointsManager.cs
+Assets\Temp\SeriesAndMathematicalInduction\SoundSystem\FXSoundSystem.cs
+Assets\Temp\SeriesAndMathematicalInduction\SoundSystem\SoundSystem.cs
+Assets\Topics-ScriptableObjects\TopicSuggestion.cs
