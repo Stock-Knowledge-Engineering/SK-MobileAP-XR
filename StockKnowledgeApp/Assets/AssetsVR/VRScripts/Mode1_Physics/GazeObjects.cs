@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class GazeObjects : MonoBehaviour
 {
 
+    public string subject;
+    public string topic;
+    public string objectName;
+
     private Mode1_ConversionGameManager gameManager;
     [Header("Gaze")]
     public ToggleTouchGaze ttg;
@@ -22,18 +26,41 @@ public class GazeObjects : MonoBehaviour
     public bool isActive;
     public bool isInteracted;
 
+    public CurrentUser currentUser;
+    private int numOfInteractables;
+
     public void Awake()
     {
         gameManager = FindObjectOfType<Mode1_ConversionGameManager>();
         this.isInteracted = false;
+        /*  
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();*/
     }
-    public void Interacted()
+
+    private void Start()
+    {
+/*        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;*/
+    }
+
+   public void Interacted()
     {
         if (!this.isInteracted)
         {
             gameManager.correctPoints.SetActive(true);
             this.isInteracted = true;
             gameManager.totalScore += 50;
+/*
+            currentUser.AddUserGamePoint(subject, topic, objectName, 50);
+
+            //count interacted object in the scene
+            int totalInteractedObject = currentUser.CountInteractedObject(topic);
+
+            //Log Player Experience
+            currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, subject, topic, 25);
+
+            //Level Up Player
+            currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);*/
         }
     }
 

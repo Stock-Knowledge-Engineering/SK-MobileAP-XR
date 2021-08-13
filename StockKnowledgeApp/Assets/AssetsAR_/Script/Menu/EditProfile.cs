@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 public class EditProfile : MonoBehaviour
 {
     public CurrentUser currentUser;
+    public ChangeScene changeScene;
 
     [Header("Page1")]
     public TMP_InputField firstName;
@@ -50,6 +51,13 @@ public class EditProfile : MonoBehaviour
 
         UpdateNameResponse result = JsonConvert.DeserializeObject<UpdateNameResponse>(content);
 
-        Debug.Log(result.success);
+        if (!result.success)
+            return;
+
+        currentUser.loginResponse.result[0].firstname = firstName.text;
+        currentUser.loginResponse.result[0].middlename = middleName.text;
+        currentUser.loginResponse.result[0].lastname = lastName.text;
+
+        changeScene.LoadScene("ProfileMenu");
     }
 }

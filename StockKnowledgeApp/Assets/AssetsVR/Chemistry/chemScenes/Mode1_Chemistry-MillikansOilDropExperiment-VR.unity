@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 51529494}
   m_Layer: 5
   m_Name: LblPlates
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,6 +288,7 @@ MonoBehaviour:
   pointsUI: {fileID: 1358746121}
   mc: {fileID: 368469012}
   complete: {fileID: 2087032497}
+  currentUser: {fileID: 0}
   ttg: {fileID: 1210638880}
   gazeTimer: 0
   radialImage: {fileID: 2142740926}
@@ -308,7 +309,7 @@ GameObject:
   - component: {fileID: 81926693}
   m_Layer: 5
   m_Name: LblAtomizer
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,6 +454,7 @@ MonoBehaviour:
   pointsUI: {fileID: 1358746121}
   mc: {fileID: 368469012}
   complete: {fileID: 2087032497}
+  currentUser: {fileID: 0}
   ttg: {fileID: 1210638880}
   gazeTimer: 0
   radialImage: {fileID: 2142740926}
@@ -6201,7 +6203,7 @@ GameObject:
   - component: {fileID: 382554048}
   m_Layer: 5
   m_Name: LblOil
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6346,6 +6348,7 @@ MonoBehaviour:
   pointsUI: {fileID: 1358746121}
   mc: {fileID: 368469012}
   complete: {fileID: 2087032497}
+  currentUser: {fileID: 0}
   ttg: {fileID: 1210638880}
   gazeTimer: 0
   radialImage: {fileID: 2142740926}
@@ -12663,7 +12666,7 @@ GameObject:
   - component: {fileID: 993296469}
   m_Layer: 5
   m_Name: LblXRay
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12808,6 +12811,7 @@ MonoBehaviour:
   pointsUI: {fileID: 1358746121}
   mc: {fileID: 368469012}
   complete: {fileID: 2087032497}
+  currentUser: {fileID: 0}
   ttg: {fileID: 1210638880}
   gazeTimer: 0
   radialImage: {fileID: 2142740926}
@@ -18125,7 +18129,7 @@ GameObject:
   - component: {fileID: 1387013297}
   m_Layer: 5
   m_Name: LblScope
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18270,6 +18274,7 @@ MonoBehaviour:
   pointsUI: {fileID: 1358746121}
   mc: {fileID: 368469012}
   complete: {fileID: 2087032497}
+  currentUser: {fileID: 0}
   ttg: {fileID: 1210638880}
   gazeTimer: 0
   radialImage: {fileID: 2142740926}
@@ -18290,7 +18295,7 @@ GameObject:
   - component: {fileID: 1600019430}
   m_Layer: 5
   m_Name: LblHole
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18435,6 +18440,7 @@ MonoBehaviour:
   pointsUI: {fileID: 1358746121}
   mc: {fileID: 368469012}
   complete: {fileID: 2087032497}
+  currentUser: {fileID: 0}
   ttg: {fileID: 1210638880}
   gazeTimer: 0
   radialImage: {fileID: 2142740926}

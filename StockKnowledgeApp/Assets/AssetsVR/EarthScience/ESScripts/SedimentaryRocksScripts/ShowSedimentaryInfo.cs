@@ -35,6 +35,20 @@ public class ShowSedimentaryInfo : MonoBehaviour
     [Header("Points")]
     public bool isGraded;
     public GameObject pointsUI;
+    public CurrentUser currentUser;
+
+    private int numOfInteractables;
+
+    public void Awake()
+    {
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();
+    }
+
+    private void Start()
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;
+    }
 
     public void ShowInfoPanel()
     {
@@ -50,6 +64,17 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Siltstone", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rockss", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -69,8 +94,18 @@ public class ShowSedimentaryInfo : MonoBehaviour
             sr.isShale = true;
             audio.clip = rockInfo[1].readDesc;
             audio.Play();
-            if (!isGraded)
-            {
+            if (!isGraded) {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Shale", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -92,6 +127,18 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Sandstone", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -113,6 +160,18 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Rock Salt", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -134,6 +193,18 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Limestone", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -155,6 +226,18 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Gypsum", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -176,6 +259,18 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Dolomite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -197,6 +292,17 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Conglomerate", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -218,6 +324,17 @@ public class ShowSedimentaryInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Sedimentary-Rocks", "Coal", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Sedimentary-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Sedimentary-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }

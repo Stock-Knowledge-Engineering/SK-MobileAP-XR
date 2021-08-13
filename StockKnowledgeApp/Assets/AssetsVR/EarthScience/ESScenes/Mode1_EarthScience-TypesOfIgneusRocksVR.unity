@@ -592,6 +592,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rhyolite
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec31e39bf1b6aae4595503f1dd07f7af,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec31e39bf1b6aae4595503f1dd07f7af, type: 3}
 --- !u!4 &57804492 stripped
@@ -722,6 +727,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -1259,6 +1265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obsidian
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fb6703ed29caff429e86ef10f5f5120,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb6703ed29caff429e86ef10f5f5120, type: 3}
@@ -2538,6 +2549,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -3707,6 +3719,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -4055,6 +4068,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scoria
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38914108a9bb247489ac1ac6abc538db,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38914108a9bb247489ac1ac6abc538db, type: 3}
 --- !u!1001 &447073879
@@ -4138,6 +4156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Granite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53b51426850869a4fb609f35d92453d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b51426850869a4fb609f35d92453d3, type: 3}
@@ -5394,6 +5417,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5770,6 +5794,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -6356,6 +6381,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pegmatite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ba288d7deaada3f4da6b426659437ba8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba288d7deaada3f4da6b426659437ba8, type: 3}
@@ -7010,6 +7040,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Andesite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 09f726c84c55a7e4b9c2d790cd5f1190,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f726c84c55a7e4b9c2d790cd5f1190, type: 3}
@@ -7696,6 +7731,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -7865,6 +7901,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gabbro
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea4412e1c51b2954197d024d0af2d0dd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4412e1c51b2954197d024d0af2d0dd, type: 3}
@@ -8222,6 +8263,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -9710,6 +9752,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -10316,6 +10359,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -11425,6 +11469,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basalt
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 81de15f347931984f9e16746f2a36065,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81de15f347931984f9e16746f2a36065, type: 3}
 --- !u!1 &1719430907
@@ -11538,6 +11587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Peridotite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e02506bbdfc0644b074228838b8ebc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e02506bbdfc0644b074228838b8ebc, type: 3}
@@ -11839,6 +11893,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -12784,6 +12839,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diorite
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7219226ac299774c8acf58b0849ac1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7219226ac299774c8acf58b0849ac1e, type: 3}
 --- !u!1 &1907889982
@@ -12945,6 +13005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pumice
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a0164a80a9d78e42b4a626576646b9a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0164a80a9d78e42b4a626576646b9a, type: 3}
@@ -13108,6 +13173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ad6a90fdd8ff6142bde768134818018,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ad6a90fdd8ff6142bde768134818018, type: 3}
@@ -13538,6 +13608,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -13703,6 +13774,7 @@ MonoBehaviour:
   audio: {fileID: 1874513528}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}

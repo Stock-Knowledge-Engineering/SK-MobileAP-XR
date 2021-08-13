@@ -313,6 +313,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -447,6 +448,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -867,6 +869,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9180012828398266957, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_RootOrder
@@ -1107,6 +1114,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5205562271212451540, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: -3610517624379630055, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1136,6 +1148,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3359940889909505343, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: -3133498875991405556, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: -2288250235709944465, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: -712370165454362749, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: -273597926952589283, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
@@ -1172,6 +1204,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 175541317816070456, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 533193074659131909, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1207,10 +1244,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 635547659545568360, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 800442303603797762, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_Name
       value: 'Microscope parts updated '
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2425986287954308753, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
@@ -1247,6 +1299,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3072145995014561336, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3202179065915901291, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1281,6 +1338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621769612025463583, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 4167280743394806330, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
@@ -1317,6 +1379,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6333212917000440152, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6333482769292111527, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1352,6 +1419,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7688879307095018520, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 8539304514840427560, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1381,6 +1453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582998932095289215, guid: 8f724595ce3bd9f42ba299ad6012f996,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 8744293859136822845, guid: 8f724595ce3bd9f42ba299ad6012f996,
         type: 3}
@@ -2378,6 +2455,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -2553,6 +2631,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -3178,6 +3257,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -3307,6 +3387,7 @@ MonoBehaviour:
   isSlideHolder: 0
   isStage: 0
   isSwitch: 0
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -3537,6 +3618,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -3797,6 +3879,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -4331,6 +4414,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -4465,6 +4549,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -4812,6 +4897,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5096,6 +5182,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5523,6 +5610,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5687,6 +5775,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5974,6 +6063,7 @@ MonoBehaviour:
   audio: {fileID: 1083693945}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}

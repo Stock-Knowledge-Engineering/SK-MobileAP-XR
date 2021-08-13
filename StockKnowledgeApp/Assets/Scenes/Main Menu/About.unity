@@ -226,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 8318926713641663394, guid: 0c88cd54926627949832cb192f55a3c1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 20.017212
+      value: 20.01709
       objectReference: {fileID: 0}
     - target: {fileID: 8318926713641663394, guid: 0c88cd54926627949832cb192f55a3c1,
         type: 3}
@@ -1650,6 +1650,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9029679016107644666, guid: c93b982e8643c1442b34bbd031ac91bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 383008356}
+    - target: {fileID: 9029679016107644666, guid: c93b982e8643c1442b34bbd031ac91bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029679016107644666, guid: c93b982e8643c1442b34bbd031ac91bf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Leaderboard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c93b982e8643c1442b34bbd031ac91bf, type: 3}
 --- !u!224 &756451977 stripped
@@ -1893,7 +1908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.999939, y: 7}
+  m_AnchoredPosition: {x: -2, y: 7}
   m_SizeDelta: {x: -980, y: -2060}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1304995808

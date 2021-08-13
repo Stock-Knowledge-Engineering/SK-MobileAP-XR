@@ -1404,6 +1404,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sandstone
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9502c4e9aaee88f4eb523ae50fcffeb7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9502c4e9aaee88f4eb523ae50fcffeb7, type: 3}
 --- !u!1 &259586721
@@ -2187,6 +2192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Conglomerate
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3b99e09c0d162b468da1ab4482cfd79,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b99e09c0d162b468da1ab4482cfd79, type: 3}
@@ -3907,6 +3917,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Siltstone
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2243e791cf7ca1547b6fbe3d7c532cbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2243e791cf7ca1547b6fbe3d7c532cbf, type: 3}
 --- !u!1 &864967326
@@ -4797,6 +4812,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5105,6 +5121,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5197,6 +5214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock Salt
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe523fbf553bd3c448b0eefee717c7df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe523fbf553bd3c448b0eefee717c7df, type: 3}
@@ -5806,6 +5828,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5898,6 +5921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limestone
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71caab23c710ad2448cee39792318ebb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71caab23c710ad2448cee39792318ebb, type: 3}
@@ -6564,6 +6592,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coal
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 716511ac77c90ce4886102dae25c8e1c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 716511ac77c90ce4886102dae25c8e1c, type: 3}
 --- !u!1 &1393572471
@@ -6946,6 +6979,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -7227,6 +7261,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -7625,6 +7660,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -7996,6 +8032,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -8152,6 +8189,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -8244,6 +8282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shale
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: edde70dc3e4e9594fb2f1dccdde6543e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edde70dc3e4e9594fb2f1dccdde6543e, type: 3}
@@ -8499,6 +8542,7 @@ MonoBehaviour:
   audio: {fileID: 1911248970}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -8825,6 +8869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dolomite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4679e5864fdcc55429e8e6c82cc14150,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4679e5864fdcc55429e8e6c82cc14150, type: 3}
@@ -9457,6 +9506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gypsum
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6a5fbbafb1fb5c4e89bd6958b22041e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6a5fbbafb1fb5c4e89bd6958b22041e, type: 3}

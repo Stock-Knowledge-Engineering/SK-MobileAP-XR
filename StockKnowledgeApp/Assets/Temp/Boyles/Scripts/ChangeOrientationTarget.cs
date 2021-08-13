@@ -15,16 +15,16 @@ public class ChangeOrientationTarget : MonoBehaviour
     public enum OrientationState {Flat, Standing, Hidden};
     public OrientationState orientationState = OrientationState.Standing;
     private OrientationState lastOrientationState;
-    public int boylesOrientation;
+    private DefaultTrackableEventHandler defaultTrackableEventHandler;
+    int boylesOrientation;
     
     Quaternion initialObjectRotation;
-
+    
     void Awake(){
         target = GetComponent<DefaultTrackableEventHandler>();
         lastOrientationState = orientationState;
         initialObjectRotation = gameobjectToRotate.transform.rotation;
         boylesOrientation = PlayerPrefs.GetInt("boylesOrientation", 0);
-        Debug.Log("Orientation:" + boylesOrientation);
     }
 
     public void InitializeOrientation()
@@ -33,14 +33,12 @@ public class ChangeOrientationTarget : MonoBehaviour
         // if standing
         if (boylesOrientation == 0) {
             orientationState = OrientationState.Standing;
-            transform.rotation = Quaternion.Euler(-90, 0, 0);
             Vector3 objectRotation = initialObjectRotation.eulerAngles;
             objectRotation.x -= 90;
             gameobjectToRotate.transform.localRotation = Quaternion.Euler(objectRotation);
         } else //if flat
         {
             orientationState = OrientationState.Flat;
-            transform.rotation = Quaternion.Euler(0, 0, 0);
             gameobjectToRotate.transform.localRotation = initialObjectRotation;
         }
     }
@@ -70,6 +68,7 @@ public class ChangeOrientationTarget : MonoBehaviour
     {
         orientationState = lastOrientationState;
         changeOrientationBtn.gameObject.SetActive(true);
+        InitializeOrientation();
     }
     private void TargetLost()
     {

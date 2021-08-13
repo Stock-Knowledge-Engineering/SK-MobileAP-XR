@@ -40,6 +40,20 @@ public class ShowInfo : MonoBehaviour
     public bool isGraded;
     public GameObject pointsUI;
 
+    public CurrentUser currentUser;
+    private int numOfInteractables;
+
+    public void Awake()
+    {
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();
+    }
+
+    private void Start()
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;
+    }
+
     public void ShowInfoPanel()
     {
         if (explodeMicroscope.isExploded)
@@ -56,6 +70,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Base", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }    
@@ -71,6 +96,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Body", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -86,6 +122,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Coarse-Focus", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -101,6 +148,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Condenser", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -116,6 +174,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Diopter-Adjust", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -131,6 +200,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Fine-Focus", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -146,6 +226,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Iris-Diaphragm", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -161,6 +252,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Light-Source", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -176,6 +278,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Nose-Piece", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -191,6 +304,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Objective-Lens", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -206,6 +330,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Ocular-Lens", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -221,6 +356,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Slide-Holder", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -236,6 +382,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Stage", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }
@@ -251,6 +408,17 @@ public class ShowInfo : MonoBehaviour
                 audio.Play();
                 if (!isGraded)
                 {
+                    currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Switch", 50);
+
+                    //count interacted object in the scene
+                    int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+                    //Log Player Experience
+                    currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+                    //Level Up Player
+                    currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                     pointsUI.gameObject.SetActive(true);
                     isGraded = true;
                 }

@@ -17,6 +17,7 @@ public class Mode1_ConversionSoundManager : MonoBehaviour
             sounds[i].SetSource(_go.AddComponent<AudioSource>());
         }
 
+
         PlaySound("Introduction"); //Introduction first 10 Seconds 
     }
     public void PlaySound(string name) // Method used for playing a specific sound (Enter the name of the audio)

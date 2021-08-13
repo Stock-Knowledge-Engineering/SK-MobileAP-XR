@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class SoundSystem : MonoBehaviour
 {
     public AudioClip[] audioList;
-    protected AudioSource audioSource;
+    internal AudioSource audioSource;
 
     protected static SoundSystem _instance;
     public static SoundSystem Instance { get { return _instance; } }
@@ -47,9 +47,10 @@ public abstract class SoundSystem : MonoBehaviour
         audioSource.loop = true;
         audioSource.volume = volume;
     }
-    public void PlaySoundDelayed(AudioClip audioClip, float delay) {
+    public AudioSource PlaySoundDelayed(AudioClip audioClip, float delay) {
         audioSource.clip = audioClip;
         audioSource.PlayDelayed(delay);
+        return audioSource;
     }
 
 

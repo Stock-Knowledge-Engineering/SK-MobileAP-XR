@@ -43,7 +43,6 @@ public class Mode2_BoylesManager : MonoBehaviour
     public int currentScore;
     public TextMeshProUGUI totalWeights;
     public TextMeshProUGUI score;
-    public GameObject points;
 
     
     // Start is called before the first frame update
@@ -120,7 +119,7 @@ public class Mode2_BoylesManager : MonoBehaviour
         currentScore += 50;
         totalWeights.text = weightCount.ToString();
         score.text = currentScore.ToString();
-        points.SetActive(true);
+        PointsManager.Instance.AddPoints();
     }
 }
 

@@ -5,17 +5,16 @@ public class UserData
 {
     public int id;
     public int userid;
+    public string title;
     public string username;
-    public string password;
-    public string email;
-    public string mobile;
     public string firstname;
     public string middlename;
     public string lastname;
-    public int gender;
-    public string photo;
-    public int usertype;
+    public string email;
+    public string mobile;
+    public int level;
+    public int experience;
+    public string gender;
+    public string photo;    
     public int verified;
-    public string title;
-    public string description;
 }

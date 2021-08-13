@@ -13,6 +13,10 @@ public class HomeBtn : MonoBehaviour
     public string levelName;
     public float timeAtLevel;
 
+    public bool isTimerRunning;
+
+    public Text levelTime;
+
     [Header("scene to load")]
     public string sceneToLoad;
 
@@ -25,7 +29,22 @@ public class HomeBtn : MonoBehaviour
     private void Update()
     {
         //for analytics
-        timeAtLevel += Time.deltaTime;
+        if (isTimerRunning)
+        {
+            timeAtLevel += Time.deltaTime;
+        }
+        else{
+            TimeFormat();
+        }
+        
+    }
+
+    void TimeFormat()
+    {
+        float seconds = timeAtLevel % 60;
+        float minutes = timeAtLevel / 60;
+        string time = (minutes < 10 ? "0" : "") + (int)minutes + ":" + (seconds < 10 ? "0" : "") + (int)seconds;
+        levelTime.text = time;
     }
 
     public void BtnHome()

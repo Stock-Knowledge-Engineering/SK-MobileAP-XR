@@ -24,6 +24,20 @@ public class ExplodeMicroscope : MonoBehaviour
     public bool isStage;
     public bool isSwitch;
 
+    public CurrentUser currentUser;
+    private int numOfInteractables;
+
+    public void Awake()
+    {
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();
+    }
+
+    private void Start()
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;
+    }
+
     public void ExplodeMS()
     {/*
         if (isExploded)
@@ -37,8 +51,18 @@ public class ExplodeMicroscope : MonoBehaviour
             isExploded = true;
             animator.SetBool("isClicked", true);
         //}
-        
-        
+
+        currentUser.AddUserGamePoint("Chemistry", "Parts-of-Microscope", "Microscope", 50);
+
+        //count interacted object in the scene
+        int totalInteractedObject = currentUser.CountInteractedObject("Parts-of-Microscope");
+
+        //Log Player Experience
+        currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Parts-of-Microscope", 25);
+
+        //Level Up Player
+        currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
     }
 
     [Header("Gaze")]

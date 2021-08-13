@@ -18,6 +18,7 @@ public class GazeObjectV2 : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private bool isRadialFilled;
     private bool isObjectGazed;
 
+
     public void OnPointerEnter(PointerEventData eventData)
     { 
         GazeAtObject();
@@ -54,7 +55,12 @@ public class GazeObjectV2 : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
                     // if onclick is detected, then invoke
                     Button btnComponent = GetComponent<Button>();
-                    if (btnComponent) btnComponent.onClick.Invoke();
+                    if (btnComponent && btnComponent.interactable) btnComponent.onClick.Invoke();
+                    else {
+                        //if there is no button but there is IPointerClick is detected, then invoke
+                        IPointerClickHandler pointerClickHandler = GetComponent<IPointerClickHandler>();
+                        if (pointerClickHandler != null)  pointerClickHandler.OnPointerClick(null); 
+                    }
 
                     // if event trigger component is detected with onclick, then invoke
                     EventTrigger eventTrigger = GetComponent<EventTrigger>();

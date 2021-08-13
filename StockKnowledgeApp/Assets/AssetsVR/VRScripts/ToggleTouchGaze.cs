@@ -87,7 +87,7 @@ public class ToggleTouchGaze : MonoBehaviour
 
     }
 
-    public void ResetProgress()
+    public virtual void ResetProgress()
     {
         isObjectGazed = false;
         gazeTimer = 0f;

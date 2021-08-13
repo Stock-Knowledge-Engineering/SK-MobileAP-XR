@@ -18,6 +18,8 @@ using UnityEngine.UI;
 
 public class OpenDoor : MonoBehaviour
 {
+    public HomeBtn home;
+
     public RoomIntro room;
 
     public string displayLabel;
@@ -62,6 +64,7 @@ public class OpenDoor : MonoBehaviour
     {
         doorCanvas.gameObject.SetActive(false);
         endCanvas.gameObject.SetActive(true);
+        home.isTimerRunning = false;
     }
 
 

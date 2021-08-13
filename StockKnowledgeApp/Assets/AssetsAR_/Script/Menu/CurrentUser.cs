@@ -41,10 +41,12 @@ public class CurrentUser : MonoBehaviour
     [Header("Physics")]
     public int physicsProgress;
 
+    public string SERVER_DOMAIN;
+    public string ASSETS_DOMAIN;
 
     public string GetRequest(string endpoint)
     {
-        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("https://api.stockknowledge.org{0}", endpoint))); //link to login. Insert api here
+        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("{0}{1}", SERVER_DOMAIN, endpoint))); //link to login. Insert api here
         //https://api.qa.stockknowledge.org{0}
         http.Accept = "application/json";
         http.ContentType = "application/json";
@@ -63,7 +65,7 @@ public class CurrentUser : MonoBehaviour
 
     public string PostRequest(string endpoint, JObject data)
     {
-        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("https://api.stockknowledge.org{0}", endpoint))); //link to login. Insert api here
+        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("{0}{1}", SERVER_DOMAIN, endpoint))); //link to login. Insert api here
         //https://api.qa.stockknowledge.org{0}
         http.Accept = "application/json";
         http.ContentType = "application/json";
@@ -132,9 +134,95 @@ public class CurrentUser : MonoBehaviour
 
     }
 
-    public void ScoreUpdate()
+    public void AddUserGamePoint(string subject, string topic, string source, int points)
     {
+        int userid = loginResponse.result[0].userid;
 
+        var data = new JObject();
+
+        var obj = new JObject();
+        obj["userid"] = userid;
+        obj["subject"] = subject;
+        obj["topic"] = topic;
+        obj["source"] = source;
+        obj["points"] = points;
+
+        data["data"] = obj;
+
+        string content = PostRequest("/score/user/add", data);
+    }
+
+    public void AddPlayerExperience(int totalInteractedObject, int numOfInteractables, string subject, string topic, int experience)
+    {
+        JObject data = new JObject();
+        JObject obj = new JObject();
+
+        if (totalInteractedObject >= numOfInteractables)
+        {
+            obj["userid"] = loginResponse.result[0].userid;
+            obj["subject"] = subject;
+            obj["topic"] = topic;
+            obj["experience"] = experience;
+
+            data["data"] = obj;
+
+            PostRequest("/player/add/experience", data);
+        }
+    }
+
+    public void PlayerLevelUp(int totalInteractedObject, int numOfInteractables)
+    {
+        JObject data = new JObject();
+        JObject obj = new JObject();
+
+        int totalAccumulatedExperience = GetTotalAccumulatedExperience();
+        int tempLevel = 1;
+
+        while (totalAccumulatedExperience - (tempLevel * 25) >= 0)
+        {
+            totalAccumulatedExperience = totalAccumulatedExperience - (tempLevel * 25);
+            tempLevel = tempLevel + 1;
+        }
+
+        obj["userid"] = loginResponse.result[0].userid;
+        obj["level"] = tempLevel;
+        obj["experience"] = totalAccumulatedExperience;
+
+        data["data"] = obj;
+
+        if (totalInteractedObject >= numOfInteractables && tempLevel > loginResponse.result[0].level)
+            PostRequest("/player/level-up", data);
+    }
+
+    public int CountInteractedObject(string topic)
+    {
+        string content = GetRequest(string.Format("/score/user/count/topic/interacted?userid={0}&topic={1}", loginResponse.result[0].userid, topic));
+        CountInteractedResponse countInteractedResponse = JsonConvert.DeserializeObject<CountInteractedResponse>(content);
+
+        int interactedObject = 0;
+
+        if (countInteractedResponse.success)
+            interactedObject = countInteractedResponse.result;
+
+        return interactedObject;
+    }
+
+    public int GetTotalAccumulatedExperience() {
+        JObject data = new JObject();
+        JObject obj = new JObject();
+
+        obj["userid"] = loginResponse.result[0].userid;
+        data["data"] = obj;
+
+        string content = PostRequest("/player/total/experience", data);
+        TotalAccumulatedExperienceResponse totalAccumulatedExperienceResponse = JsonConvert.DeserializeObject<TotalAccumulatedExperienceResponse>(content);
+
+        int totalAccumulatedExperience = 0;
+
+        if (totalAccumulatedExperienceResponse.success)
+            totalAccumulatedExperience = totalAccumulatedExperienceResponse.result;
+
+        return totalAccumulatedExperience;
     }
 
     public void LevelCheck()

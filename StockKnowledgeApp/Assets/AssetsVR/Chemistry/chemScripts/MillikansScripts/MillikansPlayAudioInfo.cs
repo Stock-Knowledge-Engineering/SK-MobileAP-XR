@@ -21,6 +21,21 @@ public class MillikansPlayAudioInfo : MonoBehaviour
     public MillikansComplete mc;
     public GameObject complete;
 
+    public CurrentUser currentUser;
+
+    private int numOfInteractables;
+
+    public void Awake()
+    {
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();
+    }
+
+    private void Start()
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;
+    }
+
     public void PlayInfo()
     {
         if (IsAtomizer)
@@ -29,6 +44,17 @@ public class MillikansPlayAudioInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Chemistry", "Millikans-Experiment", "Atomizer", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Millikans-Experiment");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Millikans-Experiment", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
                 mc.TotalScore += 1;
@@ -41,6 +67,17 @@ public class MillikansPlayAudioInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Chemistry", "Millikans-Experiment", "Xray", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Millikans-Experiment");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Millikans-Experiment", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
                 mc.TotalScore += 1;
@@ -53,6 +90,17 @@ public class MillikansPlayAudioInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Chemistry", "Millikans-Experiment", "Oil", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Millikans-Experiment");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Millikans-Experiment", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
                 mc.TotalScore += 1;
@@ -65,6 +113,17 @@ public class MillikansPlayAudioInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Chemistry", "Millikans-Experiment", "Plates", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Millikans-Experiment");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Millikans-Experiment", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
                 mc.TotalScore += 1;
@@ -77,6 +136,17 @@ public class MillikansPlayAudioInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Chemistry", "Millikans-Experiment", "Eye Piece", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Millikans-Experiment");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Millikans-Experiment", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
                 mc.TotalScore += 1;
@@ -89,6 +159,17 @@ public class MillikansPlayAudioInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Chemistry", "Millikans-Experiment", "Hole", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Millikans-Experiment");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Chemistry", "Millikans-Experiment", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
                 mc.TotalScore += 1;

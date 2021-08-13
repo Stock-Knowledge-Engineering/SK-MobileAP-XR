@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomIntro : MonoBehaviour
 {
+
     public GameObject imageBlocker;
 
     public AudioSource audio;

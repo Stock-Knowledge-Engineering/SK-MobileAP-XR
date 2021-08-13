@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817550f431371b443a1dda9f85e5dd5c, type: 3}
+  m_Name: TS-Mode2-Math-AnalyticGeometry
+  m_EditorClassIdentifier: 
+  name: Analytic Geometry
+  description: 
+  sceneToLoad: Module2_AnalyticGeometry_AR
+  partImage: {fileID: 21300000, guid: 7a6a88f57f21dc9428aa52002a5b175f, type: 3}

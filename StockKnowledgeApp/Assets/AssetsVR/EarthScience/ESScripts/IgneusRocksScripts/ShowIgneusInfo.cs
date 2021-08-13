@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -39,6 +41,23 @@ public class ShowIgneusInfo : MonoBehaviour
     public bool isGraded;
     public GameObject pointsUI;
 
+    public CurrentUser currentUser;
+    public CountInteractedResponse countInteractedResponse;
+    public TotalAccumulatedExperienceResponse totalAccumulatedExperienceResponse;
+
+    private int numOfInteractables;
+
+    public void Awake()
+    {
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();
+    }
+
+    private void Start()
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;
+    }
+
     public void ShowInfoPanel()
     {
         infoUICanvas.gameObject.SetActive(true);
@@ -53,6 +72,18 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                //Log Player Game Point/Interacted Object
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Tuff", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -74,6 +105,16 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Scoria", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -95,6 +136,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Rhyolite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -116,6 +168,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Pumice", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -137,6 +200,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Periodotite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -158,6 +232,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Pegmatite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -179,6 +264,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Obsidian", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -200,6 +296,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Granite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -221,6 +328,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Gabbro", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -242,6 +360,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Diorite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -263,6 +392,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Basalt", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -284,6 +424,17 @@ public class ShowIgneusInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Igneus-Rocks", "Andesite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Igneus-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Igneus-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }

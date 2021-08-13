@@ -15,11 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu/ProfileMenu.unity
     guid: 0ba1f7c6e24bc6244b63f402375fdd4d
   - enabled: 1
+    path: Assets/Scenes/Main Menu/Module_Menu-EditPersonalInfo.unity
+    guid: 6d5ee11250ed242479df839a3a634898
+  - enabled: 1
     path: Assets/Scenes/Main Menu/About.unity
     guid: 1a7c931e52dbb3749be7a8542ea08a6a
   - enabled: 1
     path: Assets/Scenes/Main Menu/Loading.unity
     guid: c284dd367a752bb40a84a09628baffb2
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module_Menu-EditPersonalInfo.unity
+    guid: 6d5ee11250ed242479df839a3a634898
   - enabled: 1
     path: Assets/Scenes/Main Menu/Module1_Menu-Chemistry.unity
     guid: 65cee2d3008b2b148b0eac2d423a9512
@@ -33,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu/Module1_Menu-Physics.unity
     guid: f0f6297693ea3074cb9232ae7470eb97
   - enabled: 1
+    path: Assets/Scenes/Main Menu/Module1_Menu-Mathematics.unity
+    guid: 9893502745b5a244bb3cd1a6c5325000
+  - enabled: 1
     path: Assets/Scenes/Main Menu/Module2_Menu-EarthScience.unity
     guid: a27d53d7b4648be4ba6d0a4084476d7b
   - enabled: 1
@@ -41,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu/Module2_Menu-Chemistry.unity
     guid: 05f685f395bf6e9449bf341fc263b490
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module2_Menu-Mathematics.unity
+    guid: ba30134a4ffe5a746a9f2b91bf86676a
   - enabled: 1
     path: Assets/Scenes/Main Menu/Module3_Menu-Chemistry.unity
     guid: aea827d0ab6309849a820f4b1aa8dff2
@@ -51,8 +63,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Mode1/Module1_BiologyCell.unity
     guid: 37c55ccb82824b44282402afe2163aff
   - enabled: 1
-    path: Assets/Scenes/Mode1/Mode1_Physics_MeasurementAndConversion.unity
+    path: Assets/Scenes/Mode1/Mode1_Physics_MeasurementAndConversion_VR.unity
     guid: 92eb6c965dd364d49913510de41e39d8
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Mode1_PhysicsMode1_Physics_ForcesAndInteraction_VR.unity
+    guid: 14a69d3739d690b47bb7fbd29f90407c
   - enabled: 1
     path: Assets/Scenes/Mode1/Mode1_Physics-FreeFall.unity
     guid: e6b3af6efee61bd42afc82baa5b06efb
@@ -60,7 +75,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Mode1/Module1_EarthScience-SolarSystem.unity
     guid: 0a4ab1613b760bc47b0d27db7489d731
   - enabled: 1
-    path: Assets/Scenes/Mode2/Module2_MeasurementsAndVectors.unity
+    path: Assets/Scenes/Mode2/Module2_MeasurementsAndVectors_AR.unity
     guid: 1fbc9f14f1d09d54abc44bbaae7bd6cc
   - enabled: 1
     path: Assets/Scenes/Mode1/Module1_EarthScience-IgneousRocks.unity
@@ -117,6 +132,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Mode2/Mode2_Physics-FreeFall-AR.unity
     guid: ea5de0cb6d0f98b48baae2222187166b
   - enabled: 1
+    path: Assets/Scenes/Mode1/Mode1_PhysicsMode1_Physics_FreeBodyDiagram_VR.unity
+    guid: fb3f2ed4ec8bcec4f9c806ee834c8019
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Mode2_Physics_ImpulseMomentumTheorem_AR.unity
+    guid: d496e5f2bd5adef42a6d0f9c37e6f4f4
+  - enabled: 1
     path: Assets/Scenes/Mode2/Module2_BoylesLaw.unity
     guid: dcf37c0726a400041a38f465e736a9ce
+  - enabled: 1
+    path: Assets/AssetsVR/Physics/PhysicsScenes/Mode1_Physics-Energy-VR.unity
+    guid: ddc5782afae295648959f2b1685cbf97
+  - enabled: 1
+    path: Assets/Scenes/Mode1/Module1_AnalyticGeometry_AR.unity
+    guid: 48b76786a99989c4c9bdc8393ea816d0
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Module2_AnalyticGeometry_AR.unity
+    guid: cf5025e5317fc6043aeed50b07833923
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Module3_Menu-Physics.unity
+    guid: d9be0c599e1d3da44975f451768ba406
+  - enabled: 1
+    path: Assets/Scenes/Mode2/Mode2_Math-SeriesAndMathematicalInduction_VR.unity
+    guid: 8b5fd47c3ec7e694e879671c1d155afb
+  - enabled: 1
+    path: Assets/Scenes/Mode3/Module3_Math-RelationAndFunction.unity
+    guid: 6f4dbd3676e5fb743a714158bb39ad8f
   m_configObjects: {}

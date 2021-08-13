@@ -36,6 +36,20 @@ public class ShowMetamorphicInfo : MonoBehaviour
     [Header("Points")]
     public bool isGraded;
     public GameObject pointsUI;
+    public CurrentUser currentUser;
+
+    private int numOfInteractables;
+
+    public void Awake()
+    {
+        currentUser = GameObject.Find("CurrentUser").GetComponent<CurrentUser>();
+    }
+
+    private void Start()
+    {
+        GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+        numOfInteractables = interactables.Length;
+    }
 
     public void ShowInfoPanel()
     {
@@ -51,6 +65,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Slate", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -72,6 +97,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Serpentinite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -93,6 +129,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Schist", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -114,6 +161,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Quartzite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -135,6 +193,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Phylite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -156,6 +225,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Metaconglomerate", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -177,6 +257,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Marble", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -198,6 +289,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Hornfels", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -219,6 +321,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Gneiss", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }
@@ -240,6 +353,17 @@ public class ShowMetamorphicInfo : MonoBehaviour
             audio.Play();
             if (!isGraded)
             {
+                currentUser.AddUserGamePoint("Earth-Science", "Types-Of-Metamorphic-Rocks", "Anthracite", 50);
+
+                //count interacted object in the scene
+                int totalInteractedObject = currentUser.CountInteractedObject("Types-Of-Metamorphic-Rocks");
+
+                //Log Player Experience
+                currentUser.AddPlayerExperience(totalInteractedObject, numOfInteractables, "Earth-Science", "Types-Of-Metamorphic-Rocks", 25);
+
+                //Level Up Player
+                currentUser.PlayerLevelUp(totalInteractedObject, numOfInteractables);
+
                 pointsUI.gameObject.SetActive(true);
                 isGraded = true;
             }

@@ -1455,6 +1455,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -2288,6 +2289,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -2470,6 +2472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Phyllite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 521e95d99e6cbdc47bd426902289fdc4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 521e95d99e6cbdc47bd426902289fdc4, type: 3}
@@ -2668,6 +2675,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -2947,6 +2955,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -3289,6 +3298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Schist
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 262ca6afaa496224fbf040b6ad17fca1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 262ca6afaa496224fbf040b6ad17fca1, type: 3}
@@ -4085,6 +4099,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -4611,6 +4626,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gneiss
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8097dba3fd3b23f468aafc6a494f58b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8097dba3fd3b23f468aafc6a494f58b4, type: 3}
 --- !u!1 &739587409
@@ -4748,6 +4768,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -5378,6 +5399,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quartzite
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9849d87244addaa44bdcedd5d53a26cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9849d87244addaa44bdcedd5d53a26cc, type: 3}
 --- !u!1 &907292807
@@ -5493,6 +5519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hornfels
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c901a834a6a65014a9cb2b4a2e8ea2ca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c901a834a6a65014a9cb2b4a2e8ea2ca, type: 3}
@@ -5912,6 +5943,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anthracite
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a2087d904f38d3409a774c6e969c223,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2087d904f38d3409a774c6e969c223, type: 3}
 --- !u!1 &1014833960
@@ -6067,6 +6103,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -6605,6 +6642,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Marble
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 76b04c5baef2b3240a19895cbe158f76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76b04c5baef2b3240a19895cbe158f76, type: 3}
@@ -7355,6 +7397,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Serpentinite
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce4cc0556d64e3b45b04123d51be2b74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce4cc0556d64e3b45b04123d51be2b74, type: 3}
 --- !u!1 &1385881470
@@ -7570,6 +7617,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -8116,6 +8164,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slate
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 026c2c59cd8167e4fb7696aeaf96abb6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 026c2c59cd8167e4fb7696aeaf96abb6, type: 3}
 --- !u!1 &1557410930
@@ -8467,6 +8520,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -9588,6 +9642,7 @@ MonoBehaviour:
   audio: {fileID: 2098399476}
   isGraded: 0
   pointsUI: {fileID: 358293605}
+  currentUser: {fileID: 0}
   ttg: {fileID: 948496991}
   gazeTimer: 0
   radialImage: {fileID: 1509565156}
@@ -9770,6 +9825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Metaconglomerate
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dcb2ad4ba2d84764a997900b9722bd2f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcb2ad4ba2d84764a997900b9722bd2f, type: 3}

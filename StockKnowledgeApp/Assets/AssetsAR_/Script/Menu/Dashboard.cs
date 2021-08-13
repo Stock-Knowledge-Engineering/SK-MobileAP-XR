@@ -18,7 +18,7 @@ public class Dashboard : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log("");
+        //Debug.Log("");
         studentName.text = _currentUser.loginResponse.result[0].firstname;
         //studentName.text = _currentUser.loginResponse.result[0].lastname + ", " + _currentUser.loginResponse.result[0].middlename + " " + _currentUser.loginResponse.result[0].firstname;
         //studentName.text = _currentUser.loginResponse.result[0].username;

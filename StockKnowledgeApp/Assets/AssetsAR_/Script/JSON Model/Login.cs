@@ -32,6 +32,7 @@ public class Login : MonoBehaviour
     public CurrentUser _currentUser;
     private static readonly HttpClient client = new HttpClient();
 
+    public string SERVER_DOMAIN;
 
     public void Awake() //Check if the user pressed rememberme
     {
@@ -80,7 +81,7 @@ public class Login : MonoBehaviour
 
     public string GetRequest(string endpoint)
     {
-        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("https://api.qa.stockknowledge.org{0}", endpoint))); //link to login. Insert api here
+        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("{0}{1}", SERVER_DOMAIN, endpoint))); //link to login. Insert api here
         http.Accept = "application/json";
         http.ContentType = "application/json";
         http.Method = "GET";
@@ -98,7 +99,7 @@ public class Login : MonoBehaviour
 
     public string PostRequest(string endpoint, JObject data)
     {
-        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("https://api.qa.stockknowledge.org{0}", endpoint))); //link to login. Insert api here
+        var http = (HttpWebRequest)WebRequest.Create(new Uri(string.Format("{0}{1}", SERVER_DOMAIN, endpoint))); //link to login. Insert api here
         http.Accept = "application/json";
         http.ContentType = "application/json";
         http.Method = "POST";
