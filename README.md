@@ -2,10 +2,10 @@
 # MobileXR
 Main Repository for the SK-XR mobile application.
 
-Uniuty Version : 2019.4.20f1
-Required For intallation: 
-  - Unitry Editor; 
-  - Visual Studio/ or similar IDE; 
+Unity Version : 2019.4.20f1
+Requirement for intallation: 
+  - Unity Editor; 
+  - Visual Studio or similar IDE; 
   - Android Support; 
   - IOS Support (optional);
 
@@ -21,7 +21,6 @@ This github repository contains the ff:
   - UI assets
   - Google VR SDK
   - Vuforia SDK
-
 
 
 How to install Unity.
